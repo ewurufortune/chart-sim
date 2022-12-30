@@ -23,30 +23,19 @@ root.render(<div className="parent">
     <TopRanker />
 
     </div>
-     <div className="div2">
-     {/* <AllTimer/> */}
-
-    </div>
-     <div className="div2">
-     {/* <Awards /> */}
-
-    </div>
-     <div className="div4">
-     {/* <AllArtistes /> */}
-
-    </div>
+    
      <div className="div5">
      <p><i className="fa-brands fa-twitter fa-lg"></i>@FortuneEwuru</p>
 
     </div>
     <div className="div6">
-    {/* <Release /> */}
+    <Release />
 
     </div>
-    {/* <div className="newname">
+    <div className="newname">
     <NewName /> 
 
-    </div> */}
+    </div>
 
 
 

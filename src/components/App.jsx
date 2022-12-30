@@ -142,7 +142,6 @@ function wR(){
   }
   
 }
-console.log(artistturn)
 
 wR()
 

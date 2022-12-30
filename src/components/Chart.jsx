@@ -3,9 +3,7 @@ import { Table,Col,Row} from 'antd';
 import artists from './Artists';
 import news from './News';
 import { Typography } from 'antd';
-import Ticker, { FinancialTicker, NewsTicker } from 'nice-react-ticker';
 import Marquee from "react-fast-marquee";
-import icon from './img/newsicon.png'; // add images, please make sure they can be set as src
 
 
 const { Title } = Typography;
@@ -199,7 +197,7 @@ function Charts(){
       return (
 <div>
 
-          <Marquee speed={150} gradientColor={['224','322','244']}>
+          <Marquee speed={150} >
           <div className="newsBite">{thenews[0]}</div> 
           <div className="newsBite">{thenews[1]}</div> 
           <div className="newsBite">{thenews[2]}</div> 
