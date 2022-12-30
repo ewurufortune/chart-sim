@@ -1,0 +1,84 @@
+body{
+    text-align: center;
+    background-color: #FEFBF3;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+    opacity: 1;
+    font-family:  Helvetica, sans-serif, sans-serif;
+}
+.ant-table-row {
+    background-color: #FEFBF3;
+  }
+  .ant-table-tbody .ant-table-row:nth-child(even) {
+    background-color: #FEFBF3;
+  }
+.ant-table-tbody > tr > td.ant-table-cell-row-hover {
+  background-color: #FEFBF3;
+}
+thead[class*="ant-table-thead"] th{
+    background-color: #2D46B9 !important;
+    color: #FEFBF3 !important;
+  }
+
+  .fa-down-long{
+    color: red;
+  }
+  .fa-up-long{
+    color: greenyellow;
+  }
+
+  /* CHARTS */
+  .charts{
+    width: 70%;
+    height: 50%;
+margin-left: 15%;  }
+ /* table */
+.ant-table {
+  font-size: 1px;
+  
+  height: 1%;
+}
+/* advanced news ticker */
+
+#nt-example1 {
+  max-width: 620px;
+  margin: auto;
+}
+
+#nt-example1-container {
+  text-align: center;
+}
+
+#nt-example1-container i {
+  font-size: 36px;
+  margin: 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+#nt-example1-container i:hover {
+  color: #333;
+}
+
+#nt-example1 li {
+  color: #4e4e4e;
+  background: #f2f2f2;
+  overflow: hidden;
+  height: 80px;
+  padding: 10px;
+  line-height: 30px;
+  list-style: none;
+  font-size: 24px;
+  text-align: left;
+  border-bottom: 1px dotted #2c8162;
+}
+
+#nt-example1 li:hover {
+  background: #fff;
+}
+
+.newsBite{
+  margin-right: 30px;
+}
