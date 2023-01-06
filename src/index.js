@@ -7,6 +7,7 @@ import Awards from './components/Awards.jsx'
 import AllArtistes from './components/AllArtists.jsx'
 import NewName from './components/NewArtist.jsx'
 import Date from './components/Date'
+import NewArtistForm from "./components/AddArtist";
 
 
 
@@ -25,11 +26,12 @@ root.render(<div className="parent">
     </div>
     
      <div className="div5">
-     <p><i className="fa-brands fa-twitter fa-lg"></i>@FortuneEwuru</p>
+     <a href='https://twitter.com/ewurufortune'><i className="fa-brands fa-twitter fa-lg"></i>@FortuneEwuru</a>
 
     </div>
     <div className="div6">
     <Release />
+    <NewArtistForm />
 
     </div>
     <div className="newname">

@@ -2,7 +2,7 @@ import { useState,useEffect } from 'react';
 import { Table,Col,Row} from 'antd';
 import artists from './Artists';
 import news from './News';
-import { Typography } from 'antd';
+import { Typography, Tag } from 'antd';
 import Marquee from "react-fast-marquee";
 
 
@@ -15,7 +15,7 @@ function Charts(){
    
       // Declare a state variable called "dataSource" and set it to an empty array
       const [dataSource, setDataSource] = useState([]);
-      const [thenews, setNews] = useState(['News item 1', 'News item 2', 'News item 3','New Item 4','nananana 5','jjshhshshsh 6','hshsvyu sbsn s s 7']);
+      const [thenews, setNews] = useState(['Made', 'With', 'Love!','The News!','Item',' ','hshsvyu sbsn s s 7']);
     
       // Define the columns for the table
       const columns = [
@@ -146,7 +146,7 @@ function Charts(){
               song.peak = song.newRank;
             }
             if (song.prevRank==='-' || song.prevRank>100){
-              song.status=<i className="fa-solid fa-star"></i>
+              song.status=<Tag color="#108ee9">New</Tag>
               song.prevRank='-'
                }else  if (song.newRank===song.prevRank){
               song.status='➖'
@@ -162,7 +162,16 @@ function Charts(){
       
             setNews([news[0], news[1], news[2]]);
         
-        
+            function removeOlderSongs(artists) {
+              for (let i = 0; i < artists.length; i++) {
+                let artist = artists[i];
+                if (artist.songs.length > 30) {
+                  artist.songs.splice(0, artist.songs.length - 30);
+                }
+              }
+            }
+            
+            removeOlderSongs(artists)
         
     
           // Get the top 10 songs
@@ -209,7 +218,9 @@ function Charts(){
          <Row>
       <Col span={24}>
       <Title level={3}> HOT 100 </Title>
-      <Table dataSource={dataSource} size={'small'} columns={columns} />
+      <Table
+      // scroll={{x:100+96,y:700}} 
+      dataSource={dataSource} size={'small'} columns={columns} />
       </Col>
       
     </Row>

@@ -7,8 +7,8 @@ import { uniqueNamesGenerator, adjectives,names, colors, animals } from 'unique-
 const pronoun=[
     'When I ','If I ','Can I ','When You ','If You ','Can You ','Just ','I ','You ','Me ', '','She ', 'He ', 'They ', 'We ', '','','',''
 ]
-const action=['Love','Ride','Ride For','Hate On','Hate','Adore','Fly','Call','Bang','See','Save','Go','Run','Reverse','Mix','Shoot','Lean On']
-const subject=['Me','Us','Again','Him','Her','Time','Them','','','','Yourself','Life','Love']
+const action=['Love','Ride','Ride For','Hate On','Hate','React','Commit','Adore','Fly','Call','Call On','Bang','See','Accept','Drill','Desire','Lie','Save','Go','Run','Reverse','Mix','Shoot','Shoot At','Lean On']
+const subject=['Me','Us','Again','Him','Her','Time','Them','','','','Yourself','Life','Love','']
 
 function generator(){
     const shortName = uniqueNamesGenerator({
