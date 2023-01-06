@@ -44,7 +44,10 @@ function NewTalent(){
     this.totalStreams=totalStreams;
 
   }
-  function song(title,author,feature1,feature2,totalStream,thisWeek,lag,musicVideo,status,prevRank,newRank,authorIndex,rating,support,lastWeekStatus,thisWeekStatus,peak,woc){
+  function id(){
+    return Math.random(Math.floor()*5000)
+  }
+  function song(title,author,feature1,feature2,totalStream,thisWeek,lag,musicVideo,status,prevRank,newRank,authorIndex,rating,support,lastWeekStatus,thisWeekStatus,peak,woc,id){
     this.title=title;
     this.author=author;
     this.feature1=feature1;
@@ -62,6 +65,7 @@ function NewTalent(){
     this.support=support;
     this.thisWeekStatus=thisWeekStatus;
     this.peak=peak;
+    this.id=id;
     this.lastWeekStatus=lastWeekStatus;
     this.calcTotalStreams=function(){
       this.totalStream+=this.thisWeek};
@@ -117,7 +121,7 @@ function nameo(){
     const support=rating/2
     const aI=artists.length
     const newTitles= whichFormat[Math.floor(Math.random()*whichFormat.length)]()
-    let newSong=new song (newTitles,modern.name,null,null,0,0,100,0,'🟢','-',0,aI,rating,support,11,11,'-',0)
+    let newSong=new song (newTitles,modern.name,null,null,0,0,100,0,'🟢','-',0,aI,rating,support,11,11,'-',0,id())
     modern.songs.push(newSong)
     artists.push(modern) 
 
@@ -132,7 +136,7 @@ function nameo(){
        const rating=Math.floor(Math.random()*1000)
        const support=rating/2
        const lag= Math.floor(Math.random()*20+80)
-      let newSong=new song (newTitles,artist.name,null,null,0,0,lag,0,'🟢','-',0,a0,rating,support,11,11,'-',0)
+      let newSong=new song (newTitles,artist.name,null,null,0,0,lag,0,'🟢','-',0,a0,rating,support,11,11,'-',0,id())
     
       artist.songs.push(newSong);
       return artist
@@ -149,7 +153,7 @@ function nameo(){
        const support=rating/2
        const artistname=artist.name
       
-       let newSong=new song (newTitles,artistname,f1,null,0,0,lag,0,'🟢','-',0,aI,rating,support,11,11,'-',0)
+       let newSong=new song (newTitles,artistname,f1,null,0,0,lag,0,'🟢','-',0,aI,rating,support,11,11,'-',0,id())
     
       artist.songs.push(newSong);
       return artist
@@ -166,7 +170,7 @@ function nameo(){
       const support=rating/2
       const lag= Math.floor(Math.random()*20+80)
       const artistname=artist.name
-      let newSong=new song (newTitles,artistname,f1,f2,0,0,lag,0,'🟢','-',0,aI,rating,support,11,11,'-',0)
+      let newSong=new song (newTitles,artistname,f1,f2,0,0,lag,0,'🟢','-',0,aI,rating,support,11,11,'-',0,id())
     
       artist.songs.push(newSong);
       return artist
@@ -190,7 +194,7 @@ if(newRelease===1){
   const aI=artists.length
   const lag= Math.floor(Math.random()*20+80)
   const newTitles= whichFormat[Math.floor(Math.random()*whichFormat.length)]()
-  let newSong=new song (newTitles,modern.name,null,null,0,0,lag,0,'🟢','-',0,aI,rating,support,11,11,'-',0)
+  let newSong=new song (newTitles,modern.name,null,null,0,0,lag,0,'🟢','-',0,aI,rating,support,11,11,'-',0,id())
   modern.songs.push(newSong)
   artists.push(modern) 
 }

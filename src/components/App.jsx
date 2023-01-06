@@ -19,7 +19,10 @@ function modernPerson(name,no1s,yearlyFans, fans, Awards ,lAwards,vAwards,songs,
   this.totalStreams=totalStreams;
 
 }
-function song(title,author,feature1,feature2,totalStream,thisWeek,lag,musicVideo,status,prevRank,newRank,authorIndex,rating,support,lastWeekStatus,thisWeekStatus,peak,woc){
+function id(){
+  return Math.random(Math.floor()*5000)
+}
+function song(title,author,feature1,feature2,totalStream,thisWeek,lag,musicVideo,status,prevRank,newRank,authorIndex,rating,support,lastWeekStatus,thisWeekStatus,peak,woc,id){
   this.title=title;
   this.author=author;
   this.feature1=feature1;
@@ -36,6 +39,7 @@ function song(title,author,feature1,feature2,totalStream,thisWeek,lag,musicVideo
   this.authorIndex=authorIndex;
   this.rating=rating;
   this.support=support;
+  this.id=id;
   this.thisWeekStatus=thisWeekStatus;
   this.lastWeekStatus=lastWeekStatus;
   this.calcTotalStreams=function(){
@@ -75,7 +79,7 @@ function weeklyReleases(){
    const support=rating/2
    const artistname=artist.name
    const lag= Math.floor(Math.random()*20+80)
-  let newSong=new song (newTitles,artist.name,null,null,0,0,lag,0,'🟢','-',0,a0,rating,support,11,11,'-',0)
+  let newSong=new song (newTitles,artist.name,null,null,0,0,lag,0,'🟢','-',0,a0,rating,support,11,11,'-',0,id())
 
   artistturn.push(artistname)
   artist.songs.push(newSong);
@@ -95,7 +99,7 @@ function weeklyFeatures01(){
    artistturn.push(artistname)
 
   
-   let newSong=new song (newTitles,artist.name,f1,null,0,0,lag,0,'🟢','-',0,aI,rating,support,11,11,'-',0)
+   let newSong=new song (newTitles,artist.name,f1,null,0,0,lag,0,'🟢','-',0,aI,rating,support,11,11,'-',0,id())
 
   artist.songs.push(newSong);
   return artist
@@ -112,7 +116,7 @@ const f1=artists[Math.floor(Math.random()*artists.length)].name
   const support=rating/2
   const lag= Math.floor(Math.random()*20+80)
   const artistname=artist.name
-  let newSong=new song (newTitles,artistname,f1,f2,0,0,lag,0,'🟢','-',0,aI,rating,support,11,11,'-',0)
+  let newSong=new song (newTitles,artistname,f1,f2,0,0,lag,0,'🟢','-',0,aI,rating,support,11,11,'-',0,id())
   artistturn.push(artistname)
   artist.songs.push(newSong);
   return artist

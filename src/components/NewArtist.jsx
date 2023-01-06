@@ -53,7 +53,10 @@ const surnameSellector= [" "+fname,'','']
     this.totalStreams=totalStreams;
 
   }
-  function song(title,author,feature1,feature2,totalStream,thisWeek,lag,musicVideo,status,prevRank,newRank,authorIndex,rating,support,lastWeekStatus,thisWeekStatus,peak,woc){
+  function id(){
+    return Math.random(Math.floor()*5000)
+  }
+  function song(title,author,feature1,feature2,totalStream,thisWeek,lag,musicVideo,status,prevRank,newRank,authorIndex,rating,support,lastWeekStatus,thisWeekStatus,peak,woc,id){
     this.title=title;
     this.author=author;
     this.woc=woc;
@@ -70,6 +73,7 @@ const surnameSellector= [" "+fname,'','']
     this.authorIndex=authorIndex;
     this.rating=rating;
     this.support=support;
+    this.id=id;
     this.thisWeekStatus=thisWeekStatus;
     this.lastWeekStatus=lastWeekStatus;
     this.calcTotalStreams=function(){
@@ -106,7 +110,7 @@ while (artists.length<40) {
   const support=rating/2
   const aI=artists.length
   const newTitles= whichFormat[Math.floor(Math.random()*whichFormat.length)]()
-  let newSong=new song (newTitles,modern.name,null,null,0,0,100,0,'🟢','-',0,aI,rating,support,11,11,'-',0)
+  let newSong=new song (newTitles,modern.name,null,null,0,0,100,0,'🟢','-',0,aI,rating,support,11,11,'-',0,id())
   modern.songs.push(newSong)
   artists.push(modern) 
 

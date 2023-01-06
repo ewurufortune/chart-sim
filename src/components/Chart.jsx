@@ -26,7 +26,7 @@ function Charts(){
         },
         {
           title: 'THIS WEEK',
-          key: 'sn',
+          key: 'id',
            width:'10%',
           
            render(text, record,index) {
@@ -42,8 +42,8 @@ function Charts(){
         //
         {
           title: 'TRACK',
-          dataIndex: 'title',
-          key: 'title',
+          dataIndex: 'id',
+          key: 'id',
            width:'60%',
 
            render(text, record) {
@@ -60,7 +60,7 @@ function Charts(){
         {
           title: 'LAST WEEK',
           dataIndex: 'previousRank',
-          key: 'previousRank',
+          key: 'id',
           width:'10%',
           render(text, record) {
             return {
@@ -75,7 +75,7 @@ function Charts(){
         {
           title: 'PEAK POS.',
           dataIndex: 'peak',
-          key: 'peak',
+          key: 'id',
            width:'10%',
            render(text, record) {
             return {
@@ -89,7 +89,7 @@ function Charts(){
         {
           title: 'WoC.',
           dataIndex: 'woc',
-          key: 'title',
+          key: 'id',
            width:'10%',
            render(text, record) {
             return {
@@ -179,7 +179,7 @@ function Charts(){
     
           // Create the data for the table
           setDataSource(top10Songs.map(song => ({
-            key: song.title,
+            key: song.id,
             title: song.title,
             artist: song.author,
             thisWeek: song.thisWeek,
@@ -190,7 +190,8 @@ function Charts(){
             newRank:song.newRank,
             feature1: song.feature1 ? "& " + song.feature1 : "",
             feature2: song.feature2 ? ", " + song.feature2 : "",
-            headTitle:'Header'
+            headTitle:'Header',
+        
           })));
           allSongs.forEach((object, index) => {
             object.prevRank =index+1;
