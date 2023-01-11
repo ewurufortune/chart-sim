@@ -29,15 +29,15 @@ function NewArtistForm() {
 
   return (
     <Collapse >
-          <Panel header="Add A New Artist" key="1">
+          <Panel header={<b>Add A New Artiste</b>} key="1">
 
     <Tooltip title='New artists are added every month' >
     <form onSubmit={handleSubmit}>
       <label>
-       Add Artisit:
+       Artiste Name :
         <input type="text" value={name} onChange={(event) => setName(event.target.value)} />
       </label>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Add" />
     </form>
     </Tooltip>
     </Panel>
