@@ -4,7 +4,7 @@ const A2014to2016=['John Legend','Rude','Meghan Trainor','Iggy Azalea','Bastille
 const realNames=['Kesha','Train','Katy Perry','Snoop Dog','Usher','B.o.B','Hayley Williams','will.i.am','Eminem','Rihanna','Bruno Mars','Young Money','Jason Derulo','Lady Gaga','Beyoncé','Mike Posner','The Black Eyed Peas','Jay-Z','Alicia Keys','Pitbull','Travie McCoy','Drake','Nelly','Ludacris','Timbaland','Justin Timberlake','Maroon 5','Flo Rida','David Guetta','Michael Bublé','Lil Wayne','Justin Bieber','Adam Lambert','Taylor Swift','Jeezy','Trey Songz','Sean Paul','Lil Jon','Nicki Minaj','Miley Cyrus','Chris Brown','Tyga','Kevin McCall','Britney Spears','Shontelle','Kanye West','Kelly Clarkson','OneRepublic'
 ,'Selena Gomez','DJ Khalid','T-Pain','Wiz Khalifa','Rick Ross','Birdman','Piles','Carrie Underwood','Adele',
 'Sean Kingston','The Band Perry','LMFAO','Lauren Bennett','CeeLo Green','Christina Aguilera','Jennifer Lopez','Enrique Iglesias','Pink','Jeremih','50 Cent','Diddy','Skyla Grey','Busta Rhymes','Wale','Waka Floka Flame','Avril Lavigne','Luke Bryan','The Script',
-'Ne-Yo','Afrojack','Foster The People',...A2012to2013,...A2014to2016]
+'Ne-Yo','Afrojack','Foster The People','Lady Antebellum','Taio Cruz','Lloyd','Iyaz','Owl City','La Roux','Kris Allen','3OH!3','Orianthi','Ray J',...A2012to2013,...A2014to2016]
 
 
 export default realNames

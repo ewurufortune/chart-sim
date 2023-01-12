@@ -96,7 +96,7 @@ return newTitles()
 
 
 
-while (artists.length<40) {
+while (artists.length<50) {
 
   function nameo(){
 

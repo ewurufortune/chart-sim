@@ -39,7 +39,11 @@ function NewArtistForm() {
       </label>
       <input type="submit" value="Add" />
     </form>
+
     </Tooltip>
+    </Panel>
+    <Panel header={<b>If You like this...</b>} key="1">
+    <a href="https://www.buymeacoffee.com/ewurufortune"><img  className ="buymeacoffee" alt="buy me a coffee icon" src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ewurufortune&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
     </Panel>
     </Collapse>
   );
