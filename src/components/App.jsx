@@ -109,8 +109,12 @@ function weeklyFeatures01(){
 function weeklyFeatures2(){
   const aI=Math.floor(Math.random()*artists.length)
   const artist= artists[aI]
-const f1=artists[Math.floor(Math.random()*artists.length)].name
-  const f2=artists[Math.floor(Math.random()*artists.length)].name
+  const f1=artists[Math.floor(Math.random()*artists.length)].name;
+  let f2=artists[Math.floor(Math.random()*artists.length)].name;
+  
+  while (f2 === f1) {
+  f2 = artists[Math.floor(Math.random()*artists.length)].name;
+  }
   const newTitles= whichFormat[Math.floor(Math.random()*whichFormat.length)]()
   const rating=Math.floor(Math.random()*1000)
   const support=rating/2
